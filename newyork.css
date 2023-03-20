@@ -1,0 +1,200 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body
+{
+    background-image:url(https://fr.best-wallpaper.net/wallpaper/1920x1200/1110/United-States-New-York-City-night_1920x1200.jpg);
+    
+}
+nav{
+    background:rgb(36, 173, 104) ; 
+    height: 80px; 
+    width: 100%;
+    background-attachment: fixed; 
+    height: auto;
+}
+
+label.logo{ 
+    color: whitesmoke; 
+    font-size: 35px; 
+    line-height:80px ; 
+    padding: 0 100px;
+    font-weight: bold;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #996f7e;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    float: right;
+    z-index: 1000;
+} 
+  
+
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px; 
+
+} 
+  
+  
+.topnav a:link ,
+.topnav a:visited {
+
+    color: #F8F8FF;
+    margin-right: 0px;
+    padding: 0px 5px ;
+    height: 80px;
+    font-size: 17px; 
+    text-transform: uppercase;
+    text-align: center ;
+    text-decoration: none ;
+    display: block;
+
+
+}
+  
+.topnav a:hover {
+background-color: #F8F8FF ;
+color: #996f7e;
+}
+
+.topnav a.active {
+background-color: white;
+color: #996f7e;
+}
+
+
+.float-container {
+    padding: 20px;
+    height: auto;
+    margin-top: 80px;
+}
+
+.float-container-1 {
+    padding: 20px;
+    height: auto;
+    background-color: #572e3c;
+    opacity: 0.9;
+    float: left;
+}
+.float-container-2 {
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    opacity: 0.9;
+    float: left;
+}
+.float-container-3 {
+    padding: 20px;
+    height: auto;
+    background-color: #572e3c;
+    opacity: 0.9;
+    float: left;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}  
+
+.text{
+    color: white;
+    font-size: 1.2em;
+    background: rgb(0, 0, 0); 
+    opacity: 0.8;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    float: right;
+    top: 100px;
+    text-align: justify;
+}
+
+.text-1{
+    color: white;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 20px;
+    float: right;
+    top: 100px;
+    text-align: justify;
+}
+
+.text-1>img
+{
+    float: left;
+    width: 30%;
+    margin: 10px;
+}
+
+.art-degrade {
+    background: linear-gradient(to right, #6a4552, #000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+   text-shadow: 4px 3px 0px #d7b1be, 9px 8px 0px rgba(0,0,0,0.15);
+   font-size: 4em;
+   
+}
+
+.art-degrade-1 {
+    background: linear-gradient(to right, #9a1546, #000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+   text-shadow: 4px 3px 0px white, 9px 8px 0px rgba(0,0,0,0.15);
+   font-size: 4em;
+   
+}
+
+.float-container-2>img
+{
+    float: right;
+    margin-left: 10px;
+}
+
+.float-container-2>p
+{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.float-container-3>img
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.float-container-3>p
+{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    color: white;
+}
+
+.titre
+{
+text-shadow:#e7f6ff 0 -1px 0,
+#00abf0 1px 1px 0,
+#0096e4 2px 2px 0,
+#00ceff 3px 3px 0,
+#006392 4px 4px 0,
+#00485b 5px 5px 0,
+#333 5px 5px 10px;
+color:#996f7e;
+font-size: 6em;
+}

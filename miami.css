@@ -1,0 +1,133 @@
+
+body{
+    background-image: url(https://sfregionalcouncil.org/wp-content/uploads/2020/11/iStock-1208021092-scaled-e1606162612112.jpg);
+    background-size: cover;
+    color: #ffff;
+    font-style: italic;
+    
+    
+}
+h1{
+    color: #996f7e;
+    text-align: center;
+    font-size: 150px;
+}
+
+
+
+#contenu{
+    color: white; 
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+.image1{
+    float: left;
+}
+.image2{
+    float: left;
+}
+.image3{
+    float: left;
+}
+nav
+{
+    display: flex;
+    display: items;
+    list-style-type: none;
+    background-color: #996f7e;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+.float-container
+{
+    padding: 20px;
+    height: auto;
+    margin-top: 80px;
+}
+.float-child
+{
+    width: 50%;
+    float: right;
+    padding: 20px;
+}
+.topnav a:link;
+.topnav a:visited
+{
+    color: #F8F8FF;
+    margin-right: 0px;
+    padding: 0px 5px;
+    height: 80px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.topnav a:hover{
+    background-color: #F8F8FF;
+    color: #996f7e;
+}
+.topnav a.active{
+    background-color: white;
+    color: #996f7e;
+}
+.entete h2{
+    list-style-type: none;
+    color: white;
+    display: list-item;
+    display: flex;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+nav li a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+#image{
+background-image: url(https://sfregionalcouncil.org/wp-content/uploads/2020/11/iStock-1208021092-scaled-e1606162612112.jpg);
+background-size:200px 200px;
+height: 200px;
+width: 200px;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #996f7e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    float: right;
+    z-index: 1000;
+}
+nav ul{
+    float: right;
+}
+.titre{
+    text-shadow: #e7f6ff 0 -1px 0,
+                #00abf0 1px 1px 0,
+                #0096e4 2px 2px 0,
+                #00ceff 3px 3px 0,
+                #006392 4px 4px 0,
+                #00485b 5px 5px 0,
+                #333 5px 5px 10px;
+                color: #996f7e;
+                font-size: 6em;
+}
+
+label.logo
+{
+    color: whitesmoke;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 32px   
+}

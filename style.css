@@ -1,0 +1,608 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body.welcome{
+    background-image: url(image/statut.jpg) ;
+    background-size: 100% 100%;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% , 100%;   
+}
+  
+.welcome .splash{
+    height: 0px;
+    padding: 0px;
+    border: 130em solid #996f7e;
+    position: fixed;
+    left: 50%;
+    top: 100%;
+    display: block;
+    box-sizing: initial;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}
+  
+.welcome #welcome {
+    background: white;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, 
+    moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+    moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, 
+    materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards,
+    hide 2s, 2.9s ease forwards;
+}
+  
+@keyframes init{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 56px;
+        height: 56px;
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+  
+@keyframes puff{
+    0%{
+        top: 100%;
+        height: 0px;
+        padding: 0px;
+    }
+    100%{
+        top: 50%;
+        height: 100%;
+        padding: 0px 100%;
+    }
+}
+  
+@keyframes borderRadius{
+    0%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 0px;
+    }
+}
+  
+@keyframes moveDown{
+    0%{
+        top: 50%;
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+  
+@keyframes moveUp{
+    0%{
+        background: white;
+        top: 100%;
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 50%;
+        background: white;
+    }
+}
+@keyframes materia{
+    0%{
+        background: white; 
+    }
+    50%{
+        background: white;
+        top: 26px;
+                width: 0px;
+        height: 0px;
+    }
+
+    100%{
+        background: white;
+        width: 100%;
+        height: 64px;
+        border-radius: 0px;
+        top: 26px;
+        width: 0px;
+        height: 0px;
+
+    }
+}
+  
+@keyframes moveIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+  
+@keyframes hide{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+  
+  
+nav{
+    background-color: #996f7e ; 
+    height: 80px; 
+    width: 100%;
+    background-attachment: fixed; 
+    height: auto;
+}
+
+label.logo{ 
+    color: whitesmoke; 
+    font-size: 35px; 
+    line-height:80px ; 
+    padding: 0 100px;
+    font-weight: bold;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #996f7e;;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    float: right;
+    z-index: 1000;
+    opacity: 0;
+    animation: moveIn 2s 3.1s ease forwards;
+
+} 
+  
+  
+  
+  
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px; 
+
+} 
+  
+  
+.topnav a:link ,
+.topnav a:visited {
+
+    color: #F8F8FF;
+    margin-right: 0px;
+    padding: 0px 5px ;
+    height: 80px;
+    font-size: 17px; 
+    text-transform: uppercase;
+    text-align: center ;
+    text-decoration: none ;
+    display: block;
+
+
+}
+  
+.topnav a:hover {
+background-color: #996f7e ;
+color: white;
+}
+
+.topnav a.active {
+background-color: #996f7e;
+color:white ;
+}
+  
+  
+.centered{
+    width: 80%;
+    margin-top:19%; 
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: moveIn 2s 3.1s ease forwards;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    background: rgb(0, 0, 0); 
+    opacity: 0.8;
+    color: white;
+    width: 60%;
+    padding: 20px;
+    float: right;
+    top: 100px;
+    text-align: justify;
+
+}
+
+header
+{
+    background-color: #996f7e;
+}
+
+.text>h3
+{
+    text-align: center;
+    background-color:  #996f7e;
+    color: white;
+    padding: 5px;
+    opacity:unset;
+}
+
+
+.contener_slideshow
+{
+  width:610px;
+  height:211px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(image/statut.jpg);
+}
+.slid_1, .slid_2, .slid_3
+{
+  position: absolute;
+  width:610px;
+  height:211px;
+}
+.slid_1{left: 0;}
+.slid_2{left: 610px;}
+.slid_3{left: 1220px;}
+.contener_slide
+{
+  width: 1220px;
+  height: 211px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 10s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-moz-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@-ms-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+
+/*
+h1
+{
+    text-align: center;
+    color: aliceblue;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-style: italic;
+    
+}
+header{
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    background-color: #148F77 
+    
+    
+    
+    
+}
+
+ ul,li
+{
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    display: flex;
+    float: right;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+}
+
+principale
+{
+    display: inline-block;
+    ;
+}
+
+#entete
+{
+    display: inline-block;
+    list-style-type: none;
+}
+li
+{
+    text-align: right;
+    padding: 6px;
+    margin-right: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    float: right;
+    
+}
+
+#menu
+{
+    display: flex;
+    float: left;
+}
+
+.welcome .splash{
+    height: 0px;
+    padding: 0px;
+    border: 130em solid rgb(36, 173, 104);
+    position: fixed;
+    left: 50%;
+    top: 100%;
+    display: block;
+    box-sizing: initial;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}
+
+.welcome #welcome {
+    background: ghostwhite;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
+    moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+     moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+     materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards,
+      hide 2s, 2.9s ease forwards;
+}
+
+@keyframes init{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 56px;
+        height: 56px;
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes puff{
+    0%{
+        top: 100%;
+        height: 0px;
+        padding: 0px;
+    }
+    100%{
+        top: 50%;
+        height: 100%;
+        padding: 0px 100%;
+    }
+}
+
+
+
+/*
+a
+{
+    color: white;
+}
+
+p
+{
+    font-size: 50px;
+}
+
+
+@keyframes borderRadius{
+    0%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 0px;
+    }
+}
+
+@keyframes moveDown{
+    0%{
+        top: 50%;
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+@keyframes moveUp{
+    0%{
+        background: white;
+        top: 100%;
+    }
+    50%{
+        top: 40%;
+
+    }
+    100%{
+        top: 50%;
+        background: white;
+    }
+}
+
+@keyframes materia{
+    0%{
+        background: white;
+
+
+    }
+    50%{
+        background: white;
+        top: 26px;
+                width: 0px;
+        height: 0px;
+    }
+
+    100%{
+        background: white;
+        width: 100%;
+        height: 64px;
+        border-radius: 0px;
+        top: 26px;
+        width: 0px;
+        height: 0px;
+
+    }
+}
+
+@keyframes moveIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes hide{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+label.logo{ 
+    color: whitesmoke; 
+    font-size: 35px; 
+    line-height:80px ; 
+    padding: 0 100px;
+    font-weight: bold;
+  
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(100, 159, 100);
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    float: right;
+    z-index: 1000;
+        opacity: 0;
+      animation: moveIn 2s 3.1s ease forwards;
+    
+  } 
+
+nav ul{
+    float: right;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px; 
+  
+  } 
+  
+  
+  .topnav a:link ,
+  .topnav a:visited {
+  
+      color: #F8F8FF;
+      margin-right: 0px;
+      padding: 0px 5px ;
+      height: 80px;
+      font-size: 17px; 
+      text-transform: uppercase;
+      text-align: center ;
+      text-decoration: none ;
+      display: block;
+  
+  
+  }
+  
+  .topnav a:hover {
+    background-color: #F8F8FF ;
+    color: #0082e6;
+  }
+  
+  .topnav a.active {
+    background-color: white;
+    color: #0082e6;
+  }
